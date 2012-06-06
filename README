@@ -1,0 +1,9 @@
+Configure your settings like so:
+
+AUTHENTICATION_BACKENDS = (
+    'htauth.backend.HtauthBackend',
+    )
+HTAUTH_PASSWD_FILENAME = os.path.join('/path/to/my.htpasswd')
+
+All users who log in for the first time via django-htauth will be declared superusers; 
+this may change in a future version.
