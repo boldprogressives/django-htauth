@@ -1,5 +1,6 @@
 Configure your settings like so:
 
+INSTALLED_APPS += ('htauth',)
 AUTHENTICATION_BACKENDS = (
     'htauth.backend.HtauthBackend',
     )
